@@ -477,7 +477,8 @@
 }
 .img_volni{
   width: 100%;
-  margin-top: 10px;
+  position: absolute;
+  margin-top: -750px;
 }
 /* about me */
 .about_me{
