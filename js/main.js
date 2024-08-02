@@ -3,11 +3,10 @@
 //   targetSection.scrollIntoView({ behavior: 'smooth' });
 // }
 {/* <button onclick="scrollToSection()">Прокрутить к разделу</button> */}
-
 function interpolateColor(color1, color2, factor) {
   const result = color1.slice();
   for (let i = 0; i < 3; i++) {
-      result[i] = Math.round(result[i] + factor * (color2[i] - color1[i]));
+    result[i] = Math.round(result[i] + factor * (color2[i] - color1[i]));
   }
   return result;
 }
@@ -22,8 +21,8 @@ function hexToRgb(hex) {
 
 function rgbToHex(rgb) {
   return `#${rgb.map(x => {
-      const hex = x.toString(16);
-      return hex.length === 1 ? '0' + hex : hex;
+    const hex = x.toString(16);
+    return hex.length === 1 ? '0' + hex : hex;
   }).join('')}`;
 }
 
