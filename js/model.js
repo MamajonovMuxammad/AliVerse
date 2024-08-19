@@ -1,25 +1,34 @@
-// Получаем модальное окно
-var modal = document.getElementById("myModal");
+// Получаем все кнопки, которые открывают модальные окна
+var buttons = document.querySelectorAll(".openModalBtn");
 
-// Получаем кнопку, которая открывает модальное окно
-var btn = document.getElementById("openModalBtn");
+// Добавляем обработчик события для каждой кнопки
+buttons.forEach(function(button) {
+    button.onclick = function() {
+        var modalId = this.getAttribute("data-modal");
+        var modal = document.getElementById(modalId);
+        modal.style.display = "block";
 
-// Получаем элемент <span>, который закрывает модальное окно
-var span = document.getElementsByClassName("close")[0];
+        // Получаем элемент <span>, который закрывает модальное окно
+        var span = modal.querySelector(".close");
 
-// Когда пользователь нажимает на кнопку, открыть модальное окно
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+        // Когда пользователь нажимает на <span> (x), закрыть модальное окно
+        span.onclick = function() {
+            modal.classList.add('fade-out');
+            setTimeout(function() {
+                modal.style.display = "none";
+                modal.classList.remove('fade-out');
+            }, 300);
+        };
 
-// Когда пользователь нажимает на <span> (x), закрыть модальное окно
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// Когда пользователь нажимает в любом месте вне модального окна, закрыть его
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+        // Когда пользователь нажимает в любом месте вне модального окна, закрыть его
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.classList.add('fade-out');
+                setTimeout(function() {
+                    modal.style.display = "none";
+                    modal.classList.remove('fade-out');
+                }, 300);
+            }
+        };
+    };
+});

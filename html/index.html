@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/css/about.css">
   <link rel="stylesheet" href="/css/skills.css">
   <link rel="stylesheet" href="/css/services.css">
+  <link rel="stylesheet" href="/css/qualification.css">
   <title>AliVerse.uz-Developer</title>
 </head>
 
@@ -75,7 +76,7 @@
       </span>
       <div class="about_container">
         <div class="right_block_about">
-          <img src="/img/me2.jpg" alt="">
+          <img src="/img/zacompom_chelik_about.jpg" alt="">
         </div>
         <div class="left_block_about">
           <div class="about_data">
@@ -234,22 +235,168 @@
         <!-- конец дива card -->
 
       </div>
-        <!-- конец дива card skills  -->
+      <!-- конец дива card skills  -->
 
 
     </section>
     <!-- конец section skills -->
 
-    <button id="openModalBtn">Открыть окно</button>
 
-    <!-- Модальное окно -->
-    <div id="myModal" class="modal">
-        <!-- Контент модального окна -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Это модальное окно</p>
+
+  
+  
+  
+
+    <section class="services">
+      <h2 class="section_title">Services</h2>
+      <span class="section_title_span">
+        What I offer
+      </span>
+      <div class="services_cards card-grid">
+        <div class="card_services card11">
+            <div class="info_cards">
+                <img src="/img/black-and-white.png" alt="">
+                <h5>Create <br>Aplication</h5>
+                <button class="openModalBtn" data-modal="myModal1">View More --></button>
+            </div>
+        </div>
+        <div class="card_services card22">
+            <div class="info_cards">
+                <img src="/img/package.png" alt="">
+                <h5>WebSite<br>Develop</h5>
+                <button class="openModalBtn" data-modal="myModal2">View More --></button>
+            </div>
+        </div>
+        <div class="card_services card33">
+            <div class="info_cards">
+                <img src="/img/system_admin_service.png" alt="">
+                <h5>System <br>Admin</h5>
+                <button class="openModalBtn" data-modal="myModal3">View More --></button>
+            </div>
         </div>
     </div>
+    
+    <!-- Модальные окна -->
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal_top">
+              <h3>Create Application</h3>
+              <p>Service with more than 5 years of <br>experience.Providing quality work to clients <br>and companies.</p>
+          </div>
+          <div class="modal_bottom">
+            <ul>
+              <li><img src="/img/check.png" alt=""> Developing high-quality websites for various clients</li><br>
+              <li> <img src="/img/check.png" alt=""> Creating responsive and adaptive designs</li><br>
+              <li><img src="/img/check.png" alt="">  Implementing SEO and search engine optimization</li><br>
+              <li><img src="/img/check.png" alt="">  Managing website content and updates</li><br>
+              <li><img src="/img/check.png" alt="">  Developing custom web applications</li>
+            </ul>
+          
+          </div>
+        </div>
+    </div>
+    
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal_top">
+              <h3>WebSite Develop</h3>
+              <p>Service with more than 5 years of <br>experience.Providing quality work to clients <br>and companies.</p>
+          </div>
+          <div class="modal_bottom">
+            <ul>
+              <li><img src="/img/check.png" alt=""> Developing high-quality websites for various clients</li><br>
+              <li> <img src="/img/check.png" alt=""> Creating responsive and adaptive designs</li><br>
+              <li><img src="/img/check.png" alt="">  Implementing SEO and search engine optimization</li><br>
+              <li><img src="/img/check.png" alt="">  Managing website content and updates</li><br>
+              <li><img src="/img/check.png" alt="">  Developing custom web applications</li>
+            </ul>
+          
+          </div>
+        </div>
+    </div>
+    
+    <div id="myModal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal_top">
+                <h3>System Admin</h3>
+                <p>Service with more than 5 years of <br>experience.Providing quality work to clients <br>and companies.</p>
+            </div>
+            <div class="modal_bottom">
+              <ul>
+                <li><img src="/img/check.png" alt=""> Developing high-quality websites for various clients</li><br>
+                <li> <img src="/img/check.png" alt=""> Creating responsive and adaptive designs</li><br>
+                <li><img src="/img/check.png" alt="">  Implementing SEO and search engine optimization</li><br>
+                <li><img src="/img/check.png" alt="">  Managing website content and updates</li><br>
+                <li><img src="/img/check.png" alt="">  Developing custom web applications</li>
+              </ul>
+            
+            </div>
+        </div>
+    </div>
+    
+    </section>
+    <!-- конец section SERVICES  -->
+    <section class="qualification">
+      <h2 class="section_title">Qualification</h2>
+      <span class="section_title_span">
+        My personal journey
+      </span>
+      <div class="qualit_cont">
+        <div class="tabs">
+            <button id="educationBtn" class="tab active" onclick="showContent('education')"><img src="/img/qualif_experience.png" alt=""> Education</button>
+            <button id="experienceBtn" class="tab" onclick="showContent('experience')"><img src="/img/qualif_education.png" alt=""> Experience</button>
+        </div>
+        <div class="content_qual" id="content">
+            <div id="education" class="content-section active">
+                <div class="item right">
+                    <h3>Php Developer</h3>
+                    <h5>WebForMyself</h5>
+                    <p><small>2019 - 2020</small></p>
+                </div>
+                <div class="item left">
+                    <h3>Php Developer</h3>
+                    <h5>WebForMyself</h5>
+                    <p><small>2019 - 2020</small></p>
+                </div>
+                <div class="item right">
+                    <h3>Php Developer</h3>
+                    <h5>WebForMyself</h5>
+                    <p><small>2019 - 2020</small></p>
+                </div>
+                <div class="item left">
+                    <h3>Arduino, C++</h3>
+                    <p>Samsung Campus</p>
+                    <p><small>2021 - 2022</small></p>
+                </div>
+            </div>
+            <div id="experience" class="content-section">
+                <div class="item right">
+                    <h3>Python, Django</h3>
+                    <h5>Django School</h5>
+                    <p><small>2020 - 2021</small></p>
+                </div>
+                <div class="item left">
+                    <h3>Web - Developer</h3>
+                    <h5>MohirDev Uz</h5>
+                    <p><small>2022 - 2023</small></p>
+                </div>
+                <div class="item right">
+                    <h3>Web - Developer</h3>
+                    <h5>MohirDev Uz</h5>
+                    <p><small>2022 - 2023</small></p>
+                </div>
+                <div class="item left">
+                    <h3>Web - Developer</h3>
+                    <h5>MohirDev Uz</h5>
+                    <p><small>2022 - 2023</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
 
 
 
@@ -266,7 +413,7 @@
 
   </div>
   <!-- конец глабольного дива -->
-  <img class="img_volni" src="/img/volni_header.png" alt="">
+  <!-- <img class="img_volni" src="/img/volni_header.png" alt=""> -->
 
   <div class="test"></div>
 
@@ -274,6 +421,8 @@
 
   <script src="/js/main.js"></script>
   <script src="/js/model.js"></script>
+  <script src="/js/qualif.js"></script>
+
 </body>
 
 </html>
