@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="/css/skills.css">
   <link rel="stylesheet" href="/css/services.css">
   <link rel="stylesheet" href="/css/qualification.css">
+  <link rel="stylesheet" href="/css/footer.css">
   <title>AliVerse.uz-Developer</title>
 </head>
 
@@ -24,13 +25,13 @@
       <h3>AliVerse </h3>
       <img src="/img/logo-2.png" alt="">
       <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#team">Team</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <button class="button">
+        <a onclick="scrollToSection('home')" href="javascript:void(0);">Home</a>
+        <a onclick="scrollToSection('about_sect')" href="javascript:void(0);">About</a>
+        <a onclick="scrollToSection('tskills')" href="javascript:void(0);">Skills</a>
+        <a onclick="scrollToSection('services')" href="javascript:void(0);" >Services</a>
+        <a onclick="scrollToSection('qualification')" href="javascript:void(0);">Qualification</a>
+    </div>
+      <button class="button" onclick="scrollToSection('services')">
         <span class="button_lg">
           <span class="button_sl"></span>
           <span class="button_text">Services</span>
@@ -44,15 +45,19 @@
         <p class="text_line">Full-Stack Developer</p>
         <h5>Hi, I'm Muhammad, Full-Stack Developer. I develop <br>websites, mobile applications. I repair PC,<br>
           Windows and Linux. And much more.. </h5>
-        <div class="custom-container">
-          <a href="#" class="custom-button type--C">
-            <div class="custom-button__line"></div>
-            <div class="custom-button__line"></div>
-            <span class="custom-button__text"><img src="/img/micro-icon.png" alt=""> Say Hello!</span>
-            <div class="custom-button__drow1"></div>
-            <div class="custom-button__drow2"></div>
-          </a>
-        </div>
+          <div class="custom-container">
+            <a href="#footer" class="custom-button type--C">
+              <div class="custom-button__line"></div>
+              <div class="custom-button__line"></div>
+              <span class="custom-button__text">
+                <img src="/img/micro-icon.png" alt=""> Say Hello!
+              </span>
+              <div class="custom-button__drow1"></div>
+              <div class="custom-button__drow2"></div>
+            </a>
+          </div>
+          
+          
         <div class="icons_link">
           <a href="https://www.instagram.com/itshnik_mm/"><img src="/img/instagram-icon.png" alt=""></a>
           <a href="https://www.linkedin.com/in/muxammad-mamajonov-330aa6313/"><img src="/img/linkedin-icon.png"
@@ -70,7 +75,7 @@
 
     </div>
     <!-- finish HEADER -->
-    <section class="about_section">
+    <section id="about_sect" class="about_section">
       <h2 class="section_title">About</h2>
       <span class="section_title_span">My introduction
       </span>
@@ -113,7 +118,7 @@
       </div>
     </section>
 
-    <section class="skills">
+    <section id="tskills" class="skills">
       <h2 style="color: black;" class="section_title">Skills</h2>
       <span class="section_title_span">My technical level</span>
       <div class="cards_skills">
@@ -247,7 +252,7 @@
   
   
 
-    <section class="services">
+    <section id="services"  class="services">
       <h2 class="section_title">Services</h2>
       <span class="section_title_span">
         What I offer
@@ -284,6 +289,7 @@
               <h3>Create Application</h3>
               <p>Service with more than 5 years of <br>experience.Providing quality work to clients <br>and companies.</p>
           </div>
+          
           <div class="modal_bottom">
             <ul>
               <li><img src="/img/check.png" alt=""> Developing high-quality websites for various clients</li><br>
@@ -339,7 +345,7 @@
     
     </section>
     <!-- конец section SERVICES  -->
-    <section class="qualification">
+    <section id="qualification" class="qualification">
       <h2 class="section_title">Qualification</h2>
       <span class="section_title_span">
         My personal journey
@@ -400,12 +406,58 @@
 
 
 
+    <footer id="footer">
+      <div class="container footer-container">
+          <div class="col-3">
+              <img src="/img/Снимок экрана 2024-08-19 182023.png" alt="">
+              <br>
+              <div class="social">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></i></a>
+  
+              </div>
+              <br>
+              <span class="address">Address: Махтумкули 1А.
+              </span>
+          </div>
+          <div class="col-3">
+              <h6>About</h6>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati magni sint pariatur consequatur perspiciatis voluptas.
+                  <br>
+                  <br>
+                  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. 
+              </p>
+          </div>
+          
+          <div class="col-3">
+              <h6>Get Help</h6>
+              <div class="icons_link">
+                <a href="https://www.instagram.com/itshnik_mm/"><img src="/img/instagram-icon.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/muxammad-mamajonov-330aa6313/"><img src="/img/linkedin-icon.png"
+                    alt=""></a>
+                <a target="_blank" href="https://t.me/FOOOOOOW"><img src="/img/telegram-icon.png" alt=""></a>
+                <a href="https://github.com/MamajonovMuxammad"><img src="/img/github-icon.png" alt=""></a>
+              </div>
+          </div>
+          <div class="col-3">
+              <h6>Contact</h6>
+              <a href="#">fltgenius13@gmail.com</a>
+          </div>
+      </div>
+      <div class="copyright">
+          Copyright &#169; 2024 | Footerpen All rights reserved
+      </div>
+  </footer>
 
 
 
 
 
-
+<!-- кнопка вверх  -->
+  <button onclick="scrollToTop()" id="scrollToTopBtn" title="Наверх">&#8679; Вверх</button>
 
 
 
@@ -415,7 +467,7 @@
   <!-- конец глабольного дива -->
   <!-- <img class="img_volni" src="/img/volni_header.png" alt=""> -->
 
-  <div class="test"></div>
+
 
 
 
